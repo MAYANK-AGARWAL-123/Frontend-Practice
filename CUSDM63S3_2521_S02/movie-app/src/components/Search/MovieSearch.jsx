@@ -1,4 +1,3 @@
-// src/components/Search/MovieSearch.jsx
 import { useState } from 'react';
 import { useSearchMoviesQuery } from '../../app/api';
 import { 
@@ -7,14 +6,14 @@ import {
   Grid, 
   Skeleton, 
   Alert, 
-  AlertIcon, 
   Text,
   VStack,
   HStack,
   Select,
   Button
 } from '@chakra-ui/react';
-import MovieCard from '../MovieCard/MovieCard';
+import { AlertIcon } from '@chakra-ui/alert';
+import MovieCard from '../../components/MovieCard/MovieCard';
 import useDebounce from '../../hooks/useDebounce';
 import { FaSearch, FaTimes } from 'react-icons/fa';
 
